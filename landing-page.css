@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.section {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center 0px;
+}
+
+.Navbarlist {
+  display: flex;
+  justify-content: space-around;
+  font-family: sans-serif;
+  list-style: none;
+  background-color: #ffffff;
+  text-decoration: none;
+  opacity: 0.6;
+  height: 1cm;
+  align-items: center;
+}
+
+.content-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbar-link a {
+  text-decoration: none;
+}
+
+.home-page {
+  font-family: "Roboto Condensed";
+}

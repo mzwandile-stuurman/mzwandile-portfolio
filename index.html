@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mzwandile Stuurman Portfolio</title>
     <link rel="stylesheet" href="./landing-page.css" />
+    <link rel="stylesheet" href="./about-me.css" />
+    <link rel="stylesheet" href="./education.css" />
+    <link rel="stylesheet" href="./experience.css" />
+
+    <!--External links-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script
       src="https://kit.fontawesome.com/6008c27e6e.js"
       crossorigin="anonymous"
@@ -13,21 +19,29 @@
   </head>
   <body class="section">
     <!--Landing page-->
-    <section>
+    <section
+      style="
+        background-image: url();
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+      "
+    >
       <!--Navigation bar-->
-      <div class="Nav-bar">
+      <nav class="Nav-bar">
         <ul class="Navbarlist">
           <li class="navbar-link">
             <a href="#">Home</a>
           </li>
           <li class="navbar-link">
-            <a href="link to about">About</a>
+            <a href="#about-page">About</a>
           </li>
           <li class="navbar-link">
-            <a href="link to resume">Resume</a>
+            <a href="#education">Education</a>
           </li>
           <li class="navbar-link">
-            <a href="link to Portfolio">Portfolio</a>
+            <a href="#experience">Experience</a>
           </li>
           <li class="navbar-link">
             <a href="link to contact">Contact me</a>
@@ -41,17 +55,121 @@
             </i>
           </div>
         </ul>
-      </div>
+      </nav>
+      <!--Image and content on landing page-->
       <div class="content-container">
         <div class="home-page">
-          <h2>Mzwandile Stuurman</h2>
-          <h1>Aspiring software developer</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <h2 class="home-heading">Mzwandile Stuurman</h2>
+          <h1 class="home-heading2">Aspiring software developer</h1>
+          <p class="home-paragraph">
+            I am an adventurous individual who loves to try new things. <br />I
+            believe in hard work and a positive work ethic. <br />An avid
+            follower of sport (any sport), I think this comes from my
+            competitive nature.
+          </p>
           <button class="home-button">
             <a href="link to form">Hire me</a>
           </button>
         </div>
         <img src="./Mzwandile Nbg.png" alt="Mzwandile Stuurman Image" />
+      </div>
+    </section>
+
+    <!--About me section-->
+    <section>
+      <div id="about-page">
+        <div class="position-about">
+          <h2 class="know-me-more">Know me more</h2>
+          <p class="about-header">About me <span class="line-about"></span></p>
+        </div>
+        <div class="about-content">
+          <div class="about-content1">
+            <h2 class="content1-header">
+              I am <span class="mzwandile-stuurman">Mzwandile Stuurman</span> ,
+              an aspiring Web Developer
+            </h2>
+            <p>
+              After I graduated from university in 2019, I was lucky to get a
+              six months internship at Rhino Africa as a
+              <span class="data-analyst">Marketing Data Analyst</span> . This
+              position exposed me to a lot of website management in terms of
+              website content and how websites can be used to advertise and
+              attract customers. I was fascinated by the concept of buying
+              online and always wondered how websites are made. This sparked my
+              interest in web development and ever since I have been curious and
+              eager to learn more about websites and how they are made.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+              provident quaerat, quibusdam voluptatibus dolores voluptatum
+              perferendis excepturi beatae nostrum tenetur rerum error dolorem
+              animi debitis asperiores doloremque numquam praesentium similique!
+            </p>
+          </div>
+          <div class="about-content2">
+            <p class="name">
+              Name:
+              <span class="span-mzwandile-stuurman">Mzwandile Stuurman</span>
+            </p>
+            <p class="email">email: <span>stuurmanmzwandile@gmail.com</span></p>
+            <p class="contact number">Contact: <span>078 755 1534</span></p>
+            <button><a href="">Download C.V</a></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Education Section-->
+    <section id="education">
+      <div class="education-container">
+        <div class="education-heading">
+          <h2 class="education-heading1">knowledge</h2>
+          <p class="education-paragraph">
+            My Education <span class="edu-line"></span>
+          </p>
+        </div>
+        <div class="timeline-container">
+          <div class="line"></div>
+          <div class="timeline-items item1" data-aos="fade-left">
+            <h2>Education</h2>
+            <h3>2012 - 2020</h3>
+            <p>Uxolo High school</p>
+            <p>University of Cape Town</p>
+          </div>
+          <div class="timeline-items item2" data-aos="fade-right">
+            <h1>Work experience</h1>
+            <h2>2014-2018</h2>
+            <p>2014 Leo Marquard hall, dining hall monitor</p>
+            <p>2018 Marketinng data analyst at Rhino Africa</p>
+          </div>
+          <div class="timeline-items item3" data-aos="fade-left">
+            <h2>extra activites</h2>
+            <p>Soccer, chess, coding, food, and woman</p>
+          </div>
+          <div class="timeline-items item4" data-aos="fade-right">
+            <h2>Refference</h2>
+            <p>
+              Andiyazi ukuba ndizobhala ntoni apha so, <br />
+              so long mandibe ndibhala IsiXhosa
+            </p>
+          </div>
+        </div>
+      </div>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+    </section>
+
+    <!--Experience section-->
+    <section>
+      <div id="experience">
+        <div class="experience-heading">
+          <h2 class="experience-text1">Job Experience</h2>
+          <p class="experience-text2">
+            Job Experience <span class="experience-line"></span>
+          </p>
+        </div>
       </div>
     </section>
   </body>

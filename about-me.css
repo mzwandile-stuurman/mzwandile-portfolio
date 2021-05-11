@@ -1,0 +1,67 @@
+.about-header {
+  align-self: center;
+  position: absolute;
+  color: #343a40;
+  width: 100%;
+  font-size: 3.5rem;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  margin-top: 100px;
+}
+
+.line-about {
+  border-color: #20c997;
+  width: 80px;
+  border-width: 3px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border-bottom: 2px solid #20c997;
+}
+
+.know-me-more {
+  color: #dee3e4;
+  opacity: 0.4;
+  font-weight: 600;
+  font-size: 4.5rem;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  width: 100% !important;
+}
+
+.position-about {
+  text-align: center !important;
+  margin-bottom: 3rem !important;
+  position: relative !important;
+  display: flex !important;
+}
+
+.about-content {
+  display: flex;
+  justify-content: space-around;
+  height: 100vh;
+}
+
+.about-content1 {
+  width: 50%;
+}
+
+.content1-header {
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.mzwandile-stuurman {
+  color: #20c997;
+}
+
+.name {
+  font-weight: 600;
+  margin-right: 0.5rem;
+}
+
+.span.mzwandile-stuurman{
+    
+}

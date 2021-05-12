@@ -2,6 +2,8 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  color: #4c4d4d;
+  font-family: "Poppins", sans-serif;
 }
 
 .Nav-bar {

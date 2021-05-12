@@ -5,10 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mzwandile Stuurman Portfolio</title>
+
+    <!--Internal links-->
     <link rel="stylesheet" href="./landing-page.css" />
     <link rel="stylesheet" href="./about-me.css" />
     <link rel="stylesheet" href="./education.css" />
     <link rel="stylesheet" href="./experience.css" />
+    <link rel="stylesheet" href="./portfoli.css" />
+    <link rel="stylesheet" href="./slider.css" />
 
     <!--External links-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
@@ -16,6 +20,19 @@
       src="https://kit.fontawesome.com/6008c27e6e.js"
       crossorigin="anonymous"
     ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+    />
   </head>
   <body class="section">
     <!--Landing page-->
@@ -38,10 +55,10 @@
             <a href="#about-page">About</a>
           </li>
           <li class="navbar-link">
-            <a href="#education">Education</a>
+            <a href="#education">Resume</a>
           </li>
           <li class="navbar-link">
-            <a href="#experience">Experience</a>
+            <a href="#Porfolio-section">Porfolio</a>
           </li>
           <li class="navbar-link">
             <a href="link to contact">Contact me</a>
@@ -119,7 +136,7 @@
       </div>
     </section>
 
-    <!--Education Section-->
+    <!--Resume Section-->
     <section id="education">
       <div class="education-container">
         <div class="education-heading">
@@ -155,14 +172,6 @@
           </div>
         </div>
       </div>
-      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-      <script>
-        AOS.init();
-      </script>
-    </section>
-
-    <!--Experience section-->
-    <section>
       <div id="experience">
         <div class="experience-heading">
           <h2 class="experience-text1">Job Experience</h2>
@@ -170,7 +179,193 @@
             Job Experience <span class="experience-line"></span>
           </p>
         </div>
+        <div class="experience-container">
+          <div class="rhino-africa">
+            <p class="rhino-time">August 2018 - February 2019</p>
+            <h3 class="rhino-heading">Rhino Africa</h3>
+            <h3 class="rhino-position">Junior Marketing Data analyst</h3>
+          </div>
+        </div>
       </div>
+      <div class="skills-contianer">
+        <h3 class="skills-heading">My Skills</h3>
+        <div class="skills-content-container">
+          <div class="skills-content1">
+            <p class="text-html/css">
+              <i class="fab fa-html5"></i> /
+              <i class="fab fa-css3-alt"></i> HTML/CSS <span>JUNIOR</span>
+            </p>
+            <p class="python">
+              <i class="fab fa-python"></i> Python <span>JUNIOR</span>
+            </p>
+            <p class="R">
+              <i class="fab fa-r-project"></i> R studio <span>JUNIOR</span>
+            </p>
+          </div>
+          <div class="skills-content2">
+            <p class="SQL">
+              <i class="fas fa-database"> SQL</i>SQL <span>JUNIOR</span>
+            </p>
+            <p class="tableau">
+              <i class="fas fa-plus"></i>Tableau Public <span>JUNIOR</span>
+            </p>
+          </div>
+        </div>
+        <div class="education-btn">
+          <button><a href=""> Download My C.V</a></button>
+        </div>
+      </div>
+
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+    </section>
+
+    <!--Portfolio Section-->
+    <section id="Porfolio-section">
+      <div class="portfolio-heading-container">
+        <h2 class="portfolio-heading1">Portfolio</h2>
+        <p class="portfolio-heading2">
+          Porlfolio <span class="portfolio-line"></span>
+        </p>
+      </div>
+
+      <div class="portfolio-container">
+        <div class="devider1">
+          <!--Card 1-->
+          <div class="card1-content-container">
+            <div class="portfolio-card1">
+              <div class="card1-img">
+                <img src="" alt="Card1 Image" />
+              </div>
+              <div class="portfolio-card1-details">
+                <h2 class="card1-heading1">My timeline</h2>
+                <h3 class="card1-heading2">HTML/CSS</h3>
+                <p class="card1-p">
+                  Time line created by Mzwandile Stuurman.<br />This timeline
+                  shows my growth as a web doveloper, <br />and my work
+                  experiences.
+                </p>
+                <div class="card1-btns">
+                  <a
+                    href="https://github.com/mzwandile-stuurman/timeline"
+                    class="github"
+                    >Github-Link</a
+                  >
+                  <a href="" class="live">Live-Link</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Card 2-->
+
+          <div class="portfolio-card2-container">
+            <div class="card2-content-container">
+              <div class="card2-img">
+                <img src="" alt="Card2 Image" />
+              </div>
+              <div class="card2-details">
+                <h2 class="card2-heading1">Slider</h2>
+                <h3 class="card2-heading2">HTML/CSS</h3>
+                <p class="card2p-details">
+                  Testimonial slider created by Mzwandile Stuurman. <br />
+                  These testionials are about me.
+                </p>
+                <div class="card2-btns">
+                  <a
+                    href="https://github.com/mzwandile-stuurman/timeline"
+                    class="github"
+                    >Github-Link</a
+                  >
+                  <a href="" class="live">Live-Link</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="devider2">
+          <div class="card3-container">
+            <div class="card3-content-container">
+              <div class="card3-img">
+                <img src="" alt="Card3 Image" />
+              </div>
+              <div class="card3-details">
+                <h2 class="card3-heading1">Contact form</h2>
+                <h3 class="card3-heading2">HTML/CSS</h3>
+                <p class="card3p-details">
+                  This a contact form, created for any queries that one might
+                  have.<br />Please feel free to contact me and leave a message.
+                </p>
+                <div class="card3-btns">
+                  <a
+                    href="https://github.com/mzwandile-stuurman/timeline"
+                    class="github"
+                    >Github-Link</a
+                  >
+                  <a href="" class="live">Live-Link</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Testimonial Section-->
+    <section id="slider">
+      <div class="owl-carousel">
+        <div class="slide">
+          <img src="./index.jpeg" alt="First image" />
+          <div class="text">
+            <h2 class="heading zwane">Simiso Zwane</h2>
+            This guy is a South African rap God.
+            <br />
+            He is the creator of the umswenko within Hip-Hop.
+          </div>
+        </div>
+        <div class="slide">
+          <img src="./images.jpeg" alt="Second image" />
+          <div class="text">
+            <h2 class="heading">Mzwandile Stuurman</h2>
+            Another one for the famous hit maker. <br />
+            His top songs include: <br />Amalobolo, EkseAweh! and Mapakisha
+          </div>
+        </div>
+        <div class="slide">
+          <img src="./lorch.jpeg" alt="Thembinkosi Lorch" />
+          <div class="text">
+            <h2 class="heading">Thembinkosi Lorch</h2>
+            is a tallisman for a very big South African team. <br />Orlando
+            Pirates, one of the two Soweto giants. <br />Lorch is feared by most
+            clubs but they will not admit.
+          </div>
+        </div>
+      </div>
+      <!-- Script tags under here -->
+      <script
+        src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous"
+      ></script>
+      <script>
+        $(document).ready(function () {
+          $(".owl-carousel").owlCarousel({
+            items: 1,
+            margin: 50,
+            loop: true,
+            stagePadding: 100,
+            dots: false,
+            autoplay: true,
+          });
+        });
+      </script>
     </section>
   </body>
 </html>

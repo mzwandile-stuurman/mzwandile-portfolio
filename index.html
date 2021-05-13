@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./portfoli.css" />
     <link rel="stylesheet" href="./slider.css" />
     <link rel="stylesheet" href="./contact-me.css">
+    <link rel="stylesheet" href="./skills.css">
 
     <!--External links-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
@@ -48,7 +49,7 @@
           <a href="#education">Resume</a>
         </li>
         <li class="navbar-link">
-          <a href="#Porfolio-section">Porfolio</a>
+          <a href="#Portfolio-section">Portfolio</a>
         </li>
         <li class="navbar-link">
           <a href="#slider">Testimonials</a>
@@ -132,7 +133,7 @@
             </p>
             <p class="email"> <span class="font-green">email:stuurmanmzwandile@gmail.com</span> </p>
             <p class="contact-number"> <span class="font-green">Contact:</span>  078 755 1534</p>
-            <a  class="about-btn" href="">Download C.V</a>
+            <a  class="about-btn" href="">Download C.V <i class="fas fa-download"></i></a>
           </div>
         </div>
       </div>
@@ -191,37 +192,36 @@
           </div>
         </div>
       </div>
-      <div class="skills-contianer">
+      <div class="skills-container">
         <div class="skills-heading-container">
-
           <h2 class="skills-heading1">Skills</h2>
           <p class="skills-heading2">My Skills <span class="skills-line"></span></p>
         </div>
         <div class="skills-content-container">
           <div class="skills-content1">
-            <p class="text-html/css">
+            <p class="html-css down-30px">
               <i class="fab fa-html5"></i> /
-              <i class="fab fa-css3-alt"></i> HTML/CSS <span>JUNIOR</span>
+              <i class="fab fa-css3-alt"></i> HTML/CSS <span class="junior">JUNIOR</span>
             </p>
-            <p class="python">
-              <i class="fab fa-python"></i> Python <span>JUNIOR</span>
+            <p class="python down-30px">
+              <i class="fab fa-python"></i> Python <span class="junior">JUNIOR</span>
             </p>
-            <p class="R">
-              <i class="fab fa-r-project"></i> R studio <span>JUNIOR</span>
+            <p class="R down-30px">
+              <i class="fab fa-r-project"></i> R studio <span class="junior">JUNIOR</span>
             </p>
           </div>
           <div class="skills-content2">
-            <p class="SQL">
-              <i class="fas fa-database"> SQL</i>SQL <span>JUNIOR</span>
+            <p class="SQL down-30px">
+              <i class="fas fa-database"> SQL</i>SQL <span class="junior">JUNIOR</span>
             </p>
-            <p class="tableau">
-              <i class="fas fa-plus"></i>Tableau Public <span>JUNIOR</span>
+            <p class="tableau down-30px">
+              <i class="fas fa-plus"></i>Tableau Public <span class="junior">JUNIOR</span>
             </p>
           </div>
         </div>
-        <div class="education-btn">
-          <button><a href=""> Download My C.V</a></button>
-        </div>
+        
+        <a class="skills-btn" href=""> Download My C.V <i class="fas fa-download"></i></a>
+        
       </div>
 
       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -231,11 +231,11 @@
     </section>
 
     <!--Portfolio Section-->
-    <section id="Porfolio-section">
+    <section id="Portfolio-section">
       <div class="portfolio-heading-container">
         <h2 class="portfolio-heading1">Portfolio</h2>
         <p class="portfolio-heading2">
-          Porlfolio <span class="portfolio-line"></span>
+          Portfolio <span class="portfolio-line"></span>
         </p>
       </div>
 
@@ -365,10 +365,10 @@
       <script>
         $(document).ready(function () {
           $(".owl-carousel").owlCarousel({
-            items: 1,
+            items: 3,
             margin: 50,
             loop: true,
-            stagePadding: 100,
+            stagePadding: 200,
             dots: false,
             autoplay: true,
           });

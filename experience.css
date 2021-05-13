@@ -18,7 +18,7 @@
 .experience-text2 {
   font-weight: 600;
   line-height: 1.6;
-  font-size: 1.25rem;
+  font-size: 2.5rem;
   color: #343a40;
   margin-bottom: 0;
   width: 100%;
@@ -56,6 +56,7 @@
 .rhino-heading {
   font-weight: 600;
   font-size: 1.75rem;
+  color: #343a40;
 }
 
 .experience-container {
@@ -72,4 +73,7 @@
 .education-btn {
   display: flex;
   justify-content: center;
+}
+.rhino-position {
+  color: #343a40;
 }

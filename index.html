@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./experience.css" />
     <link rel="stylesheet" href="./portfoli.css" />
     <link rel="stylesheet" href="./slider.css" />
+    <link rel="stylesheet" href="./contact-me.css">
 
     <!--External links-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
@@ -35,60 +36,63 @@
     />
   </head>
   <body class="section">
+    <nav class="Nav-bar">
+      <ul class="Navbarlist">
+        <li class="navbar-link">
+          <a href="#">Home</a>
+        </li>
+        <li class="navbar-link">
+          <a href="#about-page">About</a>
+        </li>
+        <li class="navbar-link">
+          <a href="#education">Resume</a>
+        </li>
+        <li class="navbar-link">
+          <a href="#Porfolio-section">Porfolio</a>
+        </li>
+        <li class="navbar-link">
+          <a href="#slider">Testimonials</a>
+        </li>
+        <li class="navbar-link"> <a href="#contact-me"> Contact-me</a></li>
+        <div class="social-links">
+          <i class="fab fa-linkedin-in">
+            <a href="linkedin"></a>
+          </i>
+          <i class="fab fa-github">
+            <a href="github"></a>
+          </i>
+        </div>
+      </ul>
+    </nav>
+    <div class="gray-back"></div>
     <!--Landing page-->
-    <section
-      style="
-        background-image: url();
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-position: center;
-      "
-    >
+    <section class="body-section">
+      
       <!--Navigation bar-->
-      <nav class="Nav-bar">
-        <ul class="Navbarlist">
-          <li class="navbar-link">
-            <a href="#">Home</a>
-          </li>
-          <li class="navbar-link">
-            <a href="#about-page">About</a>
-          </li>
-          <li class="navbar-link">
-            <a href="#education">Resume</a>
-          </li>
-          <li class="navbar-link">
-            <a href="#Porfolio-section">Porfolio</a>
-          </li>
-          <li class="navbar-link">
-            <a href="link to contact">Contact me</a>
-          </li>
-          <div class="social-links">
-            <i class="fab fa-linkedin-in">
-              <a href="linkedin"></a>
-            </i>
-            <i class="fab fa-github">
-              <a href="github"></a>
-            </i>
-          </div>
-        </ul>
-      </nav>
+      
       <!--Image and content on landing page-->
       <div class="content-container">
         <div class="home-page">
           <h2 class="home-heading">Mzwandile Stuurman</h2>
           <h1 class="home-heading2">Aspiring software developer</h1>
+
+          
           <p class="home-paragraph">
-            I am an adventurous individual who loves to try new things. <br />I
-            believe in hard work and a positive work ethic. <br />An avid
-            follower of sport (any sport), I think this comes from my
-            competitive nature.
+              An avid follower of sport (any sport), I think this comes from my
+              competitive nature.
           </p>
-          <button class="home-button">
-            <a href="link to form">Hire me</a>
-          </button>
+          <p class="home-paragraph">
+              I am an adventurous individual who loves to try new things. <br /> 
+          </p>
+         
+          <a  class="home-a" href="link to form">Hire me</a>
+          
+            
+          
         </div>
-        <img src="./Mzwandile Nbg.png" alt="Mzwandile Stuurman Image" />
+        
+        <img class="image" src="./Mzwandile Nbg.png" alt="Mzwandile Stuurman Image" />
+        </div>
       </div>
     </section>
 
@@ -96,7 +100,7 @@
     <section>
       <div id="about-page">
         <div class="position-about">
-          <h2 class="know-me-more">Know me more</h2>
+          <h2 class="know-me-more">About Me</h2>
           <p class="about-header">About me <span class="line-about"></span></p>
         </div>
         <div class="about-content">
@@ -105,32 +109,30 @@
               I am <span class="mzwandile-stuurman">Mzwandile Stuurman</span> ,
               an aspiring Web Developer
             </h2>
-            <p>
+            <p class="about-content-p">
               After I graduated from university in 2019, I was lucky to get a
               six months internship at Rhino Africa as a
-              <span class="data-analyst">Marketing Data Analyst</span> . This
-              position exposed me to a lot of website management in terms of
+              <span class="data-analyst">Marketing Data Analyst</span> . <br>
+            </p>
+            <p class="about-content-p">
+              This position exposed me to a lot of website management in terms of
               website content and how websites can be used to advertise and
-              attract customers. I was fascinated by the concept of buying
-              online and always wondered how websites are made. This sparked my
-              interest in web development and ever since I have been curious and
-              eager to learn more about websites and how they are made.
+              attract customers. <br> 
             </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-              provident quaerat, quibusdam voluptatibus dolores voluptatum
-              perferendis excepturi beatae nostrum tenetur rerum error dolorem
-              animi debitis asperiores doloremque numquam praesentium similique!
+            <p class="about-content-p">
+              I was fascinated by the concept of buying online and always wondered how websites are developed. This sparked my
+              interest in web development and ever since I have been curious and eager to learn more about websites and how they are made.
             </p>
+            
           </div>
           <div class="about-content2">
             <p class="name">
-              Name:
-              <span class="span-mzwandile-stuurman">Mzwandile Stuurman</span>
+              <span class="font-green">Name:</span> 
+              Mzwandile Stuurman
             </p>
-            <p class="email">email: <span>stuurmanmzwandile@gmail.com</span></p>
-            <p class="contact number">Contact: <span>078 755 1534</span></p>
-            <button><a href="">Download C.V</a></button>
+            <p class="email"> <span class="font-green">email:stuurmanmzwandile@gmail.com</span> </p>
+            <p class="contact-number"> <span class="font-green">Contact:</span>  078 755 1534</p>
+            <a  class="about-btn" href="">Download C.V</a>
           </div>
         </div>
       </div>
@@ -148,27 +150,29 @@
         <div class="timeline-container">
           <div class="line"></div>
           <div class="timeline-items item1" data-aos="fade-left">
-            <h2>Education</h2>
-            <h3>2012 - 2020</h3>
-            <p>Uxolo High school</p>
-            <p>University of Cape Town</p>
+            <h2>2012</h2>
+            <h3>Uxolo High School</h3>
+            <p>Matric Certificate</p>
+         
           </div>
           <div class="timeline-items item2" data-aos="fade-right">
-            <h1>Work experience</h1>
-            <h2>2014-2018</h2>
-            <p>2014 Leo Marquard hall, dining hall monitor</p>
-            <p>2018 Marketinng data analyst at Rhino Africa</p>
+            <h2>2019</h2>
+            <h3>University of Cape Town</h3>
+            <li> Bsc Applied Statistics</li>
+            <li>Bsc Chemistry</li>
           </div>
           <div class="timeline-items item3" data-aos="fade-left">
-            <h2>extra activites</h2>
-            <p>Soccer, chess, coding, food, and woman</p>
+            <h2>2020</h2>
+            <h3>Univesity of Cape Town</h3>
+            <p>PGCE Physical Science FET</p>
           </div>
           <div class="timeline-items item4" data-aos="fade-right">
-            <h2>Refference</h2>
-            <p>
-              Andiyazi ukuba ndizobhala ntoni apha so, <br />
-              so long mandibe ndibhala IsiXhosa
-            </p>
+            <h2>March 2021</h2>
+            <h3>Deviare Skills program</h3>
+
+            <li>Python for data science</li>
+            <li>R for data science</li>
+            <li>TableauPublic</li>
           </div>
         </div>
       </div>
@@ -188,7 +192,11 @@
         </div>
       </div>
       <div class="skills-contianer">
-        <h3 class="skills-heading">My Skills</h3>
+        <div class="skills-heading-container">
+
+          <h2 class="skills-heading1">Skills</h2>
+          <p class="skills-heading2">My Skills <span class="skills-line"></span></p>
+        </div>
         <div class="skills-content-container">
           <div class="skills-content1">
             <p class="text-html/css">
@@ -366,6 +374,84 @@
           });
         });
       </script>
+    </section>
+<!--Contact section-->
+    <section id="contact-me">
+      <div class="contact-heading">
+        <h2 class="contact-heading1">Contact-me</h2>
+        <p class="contact-heading2">
+          Contact-me <span class="contact-line"></span>
+      </div>
+      
+      <div class="form-container">
+
+        <div class="contact-content">
+          <h2 class="contact-content-heading">Contact-details</h2>
+          <p class="cotact-cell"> 078-755-1534</p>
+          <p class="contact-email"> stuurmanmzwandile@gmail.com</p>
+        </div>
+
+        <div class="form-container">
+          <form
+          id="contact-form"
+          action="https://formspree.io/f/xyylzbej"
+          method="POST"
+        >
+          <!--For the Full name label-->
+          <hi class="heading">Contact Form</hi>
+          <div class="form-group">
+            <label class="form-labels" for="name"> Full Name </label>
+            <input
+              class="form-input"
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Enter Full Name"
+              required
+            />
+          </div>
+          <!--For the email label-->
+          <div class="form-group">
+            <label class="from-labels" for="email">Your email</label>
+            <input
+              class="form-input"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="example@myemail.com"
+              required
+            />
+          </div>
+          <!--For the contact label-->
+          <div class="form-group">
+            <label class="from-labels" for="contact">Contacts</label>
+            <input
+              class="form-input"
+              type="tel"
+              name="Contact"
+              id="contact"
+              placeholder="072 123 4567"
+              required
+            />
+          </div>
+          <!--For the message text area-->
+          <div class="form-group">
+            <label class="from-labels" for="message"> Your message: </label>
+            <textarea
+              class="form-input"
+              name="message"
+              id="message"
+              placeholder="Please enter your message"
+              required
+            ></textarea>
+          </div>
+    
+          <!-- The submit button-->
+    
+          <button class="button" type="submit">Send</button>
+
+        </div>
+      </div>  
     </section>
   </body>
 </html>

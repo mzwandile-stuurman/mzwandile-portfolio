@@ -43,7 +43,6 @@
 }
 .form-container {
   border-radius: 39px;
-  background-color: #06688c;
   padding: 5% 10%;
   display: flex;
   justify-content: center;
@@ -54,15 +53,15 @@
   color: white;
 }
 
-#contact-form {
+.contact-form {
   border-radius: 39px;
-  background: #12a3d8;
-  box-shadow: 12px 12px 24px #0e81ab, -12px -12px 24px #16c5ff;
+  background: #bdd7e4;
+  box-shadow: 12px 12px 24px #20c997, -12px -12px 24px #20c997;
   padding: 5% 10%;
   display: flex;
   justify-content: center;
   font-family: sans-serif;
-  color: white;
+  color: #343a40;
   flex-direction: column;
 }
 .form-group {

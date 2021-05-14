@@ -1,3 +1,6 @@
+* {
+  scroll-behavior: smooth;
+}
 .Nav-bar {
   position: sticky;
   padding: 0;
@@ -111,4 +114,7 @@ body {
   z-index: 1;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8));
   margin-top: 10px;
+}
+
+@media (max-width: 1043) {
 }

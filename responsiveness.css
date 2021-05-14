@@ -1,0 +1,13 @@
+@media only screen and(max-width: 768px) {
+  .Nav-bar {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and(min-width:768px) {
+  .Navbarlist {
+    display: flex;
+    flex-direction: column;
+  }
+}

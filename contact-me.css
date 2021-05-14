@@ -1,3 +1,46 @@
+.contact-heading {
+  text-align: center;
+  margin-bottom: 3rem;
+  position: relative;
+  display: flex !important;
+}
+
+.contact-heading1 {
+  color: #dee3e4;
+  opacity: 0.4;
+  font-weight: 600;
+  font-size: 4.5rem;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  width: 100%;
+}
+
+.contact-heading2 {
+  font-weight: 600;
+  line-height: 1.6;
+  font-size: 2.25rem;
+  color: #343a40;
+  margin-bottom: 0;
+  width: 100%;
+  position: absolute;
+  font-family: "Poppins", sans-serif;
+  margin-top: 75px;
+}
+
+.contact-line {
+  border-color: #20c997;
+  width: 80px;
+  border-width: 3px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border-bottom: 2px solid #20c997;
+}
+
+.contact-section-container {
+  display: flex;
+  justify-content: space-around;
+}
 .form-container {
   border-radius: 39px;
   background-color: #06688c;

@@ -51,6 +51,8 @@
   box-sizing: border-box;
   font-family: sans-serif;
   color: white;
+  width: 50%;
+  margin-bottom: 50px;
 }
 
 .contact-form {

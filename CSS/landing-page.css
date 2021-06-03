@@ -1,30 +1,36 @@
 * {
   scroll-behavior: smooth;
 }
-.nav-section {
+.Nav-bar {
   position: sticky;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  padding: 0;
+  z-index: 999;
+  top: 0;
+  left: 0;
+
   width: 100%;
-  height: auto;
+  box-shadow: none;
   color: #fff;
   font-family: 500;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .Navbarlist {
+  display: flex;
+  justify-content: space-around;
+  font-family: sans-serif;
   list-style: none;
-  display: inline-block;
-  padding: 8px 12px;
+
+  text-decoration: none;
+  opacity: 0.6;
+  height: 1cm;
+  align-items: center;
 }
 
 .content-container {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-left: 30px;
-  color: #343a40;
 }
 
 .navbar-link a {
@@ -36,9 +42,9 @@
 .home-page {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-
-  margin: inherit;
+  margin-top: 70px;
 }
 
 .home-heading {
@@ -56,24 +62,18 @@
 body {
   font-family: "Poppins", sans-serif;
 }
-.body-section {
-  position: relative;
-  min-height: 100%;
-
-  background-size: cover;
-  z-index: 1;
-}
 
 .gray-back {
-  width: 100%;
-  height: 100%;
   position: absolute;
-  top: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  top: 0%;
   z-index: -1;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)),
-    url("../Images/laptop.jpg");
-  background-size: cover;
+}
+
+.gray-back img {
+  width: 100vw;
+  height: 100vh;
+  color: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+  z-index: -2;
 }
 
 .home-paragraph {
@@ -108,5 +108,21 @@ body {
   margin-top: 10px;
 }
 
-@media (max-width: 1043) {
+/* @media (max-width: 1043) {
+} */
+
+@media screen and (max-width: 720px) {
+  .Nav-bar {
+    top: 0%;
+    right: 0%;
+    font-size: 11px;
+    position: sticky;
+  }
+  .navbar-link {
+    padding: 0.5%;
+  }
+  .gray-back {
+    width: 100%;
+    object-fit: cover;
+  }
 }

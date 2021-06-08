@@ -1,3 +1,8 @@
+#education {
+  height: 100vh;
+  width: 100vw;
+}
+
 .education-heading {
   text-align: center;
   margin-bottom: 3rem;

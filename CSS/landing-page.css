@@ -27,6 +27,8 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  height: 100vh;
+  width: 100vw;
 }
 
 .navbar-link a {
@@ -71,7 +73,8 @@ body {
   z-index: 1;
   position: absolute;
   width: 100vw;
-  height: 120vh;
+  height: 100vh;
+  top: 0;
 }
 
 .gray-back img {

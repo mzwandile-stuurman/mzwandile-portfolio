@@ -1,9 +1,12 @@
-function classToggle() {
-  const navs = document.querySelectorAll(".Nav-bar");
+let i = 0,
+  myname;
+myname = "Mzwandile Stuurman";
 
-  navs.forEach((nav) => nav.classList.toggle("Navbar__ToggleShow"));
+function typing() {
+  if (i < myname.length) {
+    document.getElementById("type-heading").innerHTML += myname.charAt(i);
+    i++;
+    setTimeout(typing, 90);
+  }
 }
-
-document
-  .querySelector(".Navbar__Link-toggle")
-  .addEventListener("click", classToggle);
+typing();

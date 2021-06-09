@@ -32,7 +32,7 @@
 
 .position-about {
   text-align: center;
-  margin-top: 100px;
+  margin-top: 0px;
   position: relative;
   display: flex;
 }
@@ -40,7 +40,6 @@
 .about-content {
   display: flex;
   justify-content: space-around;
-  height: 100vh;
 }
 
 .about-content1 {

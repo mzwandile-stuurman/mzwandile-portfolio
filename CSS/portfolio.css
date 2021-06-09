@@ -57,12 +57,11 @@
 
 .card1-content-container {
   border-style: solid;
-  border-radius: 10px;
-  background: rgba(255, 255, 255, 0.15);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
+  border-radius: 4px;
+  background: rgb(255, 255, 255);
   margin-bottom: 30px;
+  margin-left: 30px;
+  height: 400px;
 }
 
 .card1-img {
@@ -71,6 +70,9 @@
 
 .card1-img img {
   border-radius: 20px;
+  margin-top: 10px;
+  max-height: 200px;
+  max-width: 300px;
 }
 
 .portfolio-card1-details {
@@ -78,23 +80,30 @@
 }
 
 .card2 img {
-  height: 300px;
-  width: 500px;
+  max-height: 300px;
+  max-width: 300px;
   border-radius: 20px;
+  margin-top: 10px;
 }
 
 .card3 img {
-  height: 300px;
-  width: 500px;
+  max-height: 300px;
+  max-width: 300px;
   border-radius: 20pxs;
+  margin-top: 10px;
 }
 
 .card4 img {
-  height: 300px;
-  width: 500px;
+  max-height: 300px;
+  max-width: 300px;
   border-radius: 20px;
+  margin-top: 10px;
 }
-
+.card-btns {
+  display: flex;
+  justify-content: space-around;
+  margin-top: -51px;
+}
 .github {
   text-decoration: none;
   color: #20c997;
@@ -117,13 +126,41 @@
 
 .buttons {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .devider1 {
   margin-bottom: 10px;
 }
 
-.portfolio-card1 .portfolio-card2 {
+.portfolio-card1 .portfolio-card2 .card3-container .card4-container {
   margin-top: 10%;
+  height: 500px;
+}
+.card1-p {
+  font-weight: 500;
+}
+
+.card3p-details {
+  margin-bottom: 60px;
+}
+
+.card4p-details {
+  margin-bottom: 70px;
+}
+
+.card3-heading2 {
+  margin-bottom: 30px;
+}
+
+.card3-btns {
+  display: flex;
+  justify-content: space-around;
+  margin-top: -70px;
+}
+
+.card4-btns {
+  display: flex;
+  justify-content: space-around;
+  margin-top: -47px;
 }

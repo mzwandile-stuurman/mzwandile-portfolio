@@ -34,6 +34,8 @@
 .slide {
   padding: 20px;
   border-radius: 0.25rem;
+  background-color: #f8f9fa;
+  height: 290px;
 }
 
 .slide-content {
@@ -45,11 +47,13 @@
   color: #343a40;
 }
 
-.image {
-  border-radius: 20%;
-  z-index: 0;
-  width: 100px;
-  height: 100px;
+#image {
+  border-radius: 50%;
+  display: block;
+  margin-right: 18px;
+  object-fit: cover;
+  width: 80px;
+  height: 80px;
 }
 
 .strong {
@@ -76,4 +80,8 @@
 
 .heading {
   margin-bottom: 20%;
+}
+
+.p2 {
+  color: #343a40;
 }

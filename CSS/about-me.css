@@ -68,11 +68,11 @@
 
 .about-content-p {
   color: #4c4d4d;
-  margin-bottom: 60px;
+  margin-bottom: 6px;
 }
 
 .content1-header {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .about-content1 {
@@ -91,7 +91,7 @@
 
 .font-green {
   color: #4c4d4d;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .about-btn {
@@ -112,6 +112,10 @@
   background-color: #20c997;
   color: #fff;
   transition-duration: 0.5s;
+}
+
+.content2 {
+  margin-bottom: 55px;
 }
 
 @media screen and (max-width: 720px) {

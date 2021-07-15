@@ -2,6 +2,10 @@
   scroll-behavior: smooth;
 }
 
+.body-section {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
+    url("./C8_Apr21_Mzwandile_Stuurman_2_20.png");
+}
 .Nav-bar {
   position: fixed;
   z-index: 999;
@@ -11,15 +15,15 @@
   color: #fff;
   font-family: 500;
   object-fit: cover;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7));
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8));
 }
 
 .Navbarlist {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   list-style: none;
   text-decoration: none;
-  opacity: 0.6;
+
   height: 0.5cm;
   align-items: center;
 }

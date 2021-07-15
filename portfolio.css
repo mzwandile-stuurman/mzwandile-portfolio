@@ -161,3 +161,7 @@
   justify-content: space-around;
   margin-top: -47px;
 }
+
+.show {
+  display: block;
+}

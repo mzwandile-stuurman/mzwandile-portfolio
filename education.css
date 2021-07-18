@@ -72,8 +72,6 @@
   color: #dc3545;
 }
 
- 
-
 .year1 {
   background-color: #20c997;
   font-weight: 400;
@@ -99,4 +97,14 @@
 
 .education-heading-new h2 {
   text-align: center;
+}
+
+.edu-line {
+  border-color: #20c997;
+  width: 80px;
+  border-width: 3px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border-bottom: 2px solid #20c997;
 }

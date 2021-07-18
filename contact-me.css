@@ -43,6 +43,8 @@
   width: 100%;
 }
 .form-container {
+  display: flex;
+  flex-wrap: wrap;
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
@@ -68,20 +70,19 @@
   font-weight: 500;
 }
 .contact-form {
-  padding: 5% 10%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   font-family: sans-serif;
   color: #343a40;
-  flex-direction: column;
 }
 
 .contact-content {
-  position: relative;
-  width: 100%;
-  display: block;
+  flex: 0 0 auto;
   align-self: center;
   margin-left: 90px;
+  width: 25%;
+  max-width: 100%;
 }
 
 .address {
@@ -89,14 +90,13 @@
 }
 
 .form-group {
-  padding: 5% 10%;
+  flex: 0 0 auto;
+  width: 50%;
 }
 
 .form-input {
-  width: 120%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  width: 100%;
+
   height: 30px;
   border-radius: 5px;
 }

@@ -103,3 +103,24 @@ function w3RemoveClass(element, name) {
   }
   element.className = arr1.join(" ");
 }
+
+var home = document.querySelector(".home");
+var about = document.querySelector(".about");
+var resume = document.querySelector(".resume");
+var portfolio = document.querySelector(".portfolio");
+var testimonial = document.querySelector(".testimonial");
+var contact = document.querySelector(".contact");
+
+if (home) {
+  document.querySelector(".home").style.color = "green";
+} else if (about) {
+  document.querySelector(".about").style.color = "green";
+} else if (resume) {
+  document.querySelector(".resume").style.color = "green";
+} else if (portfolio) {
+  document.querySelector(".portfolio").style.color = "green";
+} else if (testimonail) {
+  document.querySelector(".testimonial").style.color = "green";
+} else if (contact) {
+  document.querySelector(".contact").style.color = "green";
+}

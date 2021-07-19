@@ -43,36 +43,21 @@
     
     
     <!--Landing page-->
-    <section class="body-section">    
+    <section class="body-section" id="home">    
      <!--Navigation bar-->
       <!--Image and content on landing page-->
-      
-      <nav class="Nav-bar">
-        <ul class="Navbarlist">
-          <li class="navbar-link">
-            <a class="home" onmouseover="style.color='green'" onmouseout="style.color='white'" href="#">Home</a>
-          </li>
-          <li class="navbar-link">
-            <a class="about" onmouseover="style.color='green'" onmouseout="style.color='white'" href="#about-section">About</a>
-          </li>
-          <li class="navbar-link">
-            <a class="resume" onmouseover="style.color='green'" onmouseout="style.color='white'" href="#education">Resume</a>
-          </li>
-          <li class="navbar-link">
-            <a class="portfolio" onmouseover="style.color='green'" onmouseout="style.color='white'" href="#Portfolio-section">Portfolio</a>
-          </li>
-          <li class="navbar-link">
-            <a class="testimonial" onmouseover="style.color='green'" onmouseout="style.color='white'" href="#slider">Testimonials</a>
-          </li>
-          <li class="navbar-link"> <a class="contact" onmouseover="style.color='green'" onmouseout="style.color='white'" href="#contact-me"> Contact</a></li>
-          
-        </ul>
-      </nav>
-
-
-
+      <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">Home</a>
+        <a href="#about-section">About</a>
+        <a href="#education">Resume</a>
+        <a href="#Portfolio-section">Portfolio</a>
+        <a href="#slider">Testimonials</a>
+        <a href="#contact-me">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
       <div class="content-container">
-        
         <div class="home-page">
           <h2 class="home-heading"><span id="type-heading" class="type-color"></span></h2>
           <h1 class="home-heading2">Aspiring software developer</h1>
@@ -86,10 +71,7 @@
           </p>
          
           <a  class="home-a" href="#contact-me">Hire me</a>
-          
-          
         </div>
-        
       </div>
      
     </section>
@@ -281,113 +263,22 @@
           Portfolio <span class="portfolio-line"></span>
         </p>
       </div>
-      <div id="myBtnContainer">
-        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-        <button class="btn" onclick="filterSelection('python')"> python</button>
-        <button class="btn" onclick="filterSelection('javascript')"> javascript</button>
-        <button class="btn" onclick="filterSelection('html/css')"> html/css</button>
+     <!--- <ul class="filter-menu">
+        <li data-target="all" > Show all</li>
+        <li data-target="python" > python</li>
+        <li data-target="javascript" > javascript</li>
+        <li data-target="html/css" > html/css</li>
+      </ul> -->
+
+      <div class="button-container">
+        <button onclick="filterCards('All')">All</button>
+        <button onclick="filterCards('HTML/CSS')">HTML/CSS</button>
+        <button onclick="filterCards('Python')">Python</button>
+        <button onclick="filterCards('JavaScript')">JavaScript</button>
       </div>
 
-      <div class="portfolio-container">
-       
-        <div class="devider1">
-          <!--Card 1-->
-          <div class=" collumn python card1-content-container">
-            <div class="portfolio-card1">
-              <div class="card1-img">
-                <img src="./lotto.png" alt="Contact-form-image" />
-              </div>
-              <div class="portfolio-card1-details">
-                <h2 class="card1-heading1">Lotto number generator</h2>
-                <h3 class="card1-heading2">Python</h3>
-                <p class="card1-p">
-                  Software to generate lotto numbers.
-                </p>
-                <div class="card-btns">
-                  <a
-                    href="https://github.com/mzwandile-stuurman/python_lotto_machine"
-                    class="github" target="_blank"
-                    >Github-Link</a
-                  >
-                  <a target="_blank" href="https://replit.com/@Mzwandile/Pythonlottogenerator#main.py" class="live">Live-Link</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!--Card 2-->
-
-          <div class=" collumn javascript portfolio-card2-container">
-            <div class="card1-content-container">
-              <div class="card1-img card2"> 
-                <img src="./PokeDex.png" alt="Card2 Image" />
-              </div>
-              <div class="portfolio-card1-details">
-                <h2 class="card2-heading1">PokeDex</h2>
-                <h3 class="card2-heading2">JavaScript</h3>
-                <p class="card2p-details">
-                  Pokedex that gives a list of Pokemons to chose from.
-                </p>
-                <div class="card-btns">
-                  <a
-                    href="https://github.com/mzwandile-stuurman/pokemon-API"
-                    class="github" target="_blank"
-                    >Github-Link</a
-                  >
-                  <a target="_blank" href="https://mzwandile-pokedex.netlify.app/" class="live">Live-Link</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class=" collumn html/css devider2">
-          <div class="card3-container">
-            <div class="card1-content-container">
-              <div class="card1-img card3"> 
-                <img src="./Screenshot from 2021-05-14 09-13-34.png" alt="Card3 Image" />
-              </div>
-              <div class="portfolio-card1-details">
-                <h2 class="card3-heading1">Sneaker Site</h2>
-                <h3 class="card3-heading2">HTML/CSS and JS</h3>
-                <p class="card3p-details">
-                  Dummy Sneaker site for advertising, orders and purchase
-                </p>
-                <div class="card3-btns">
-                  <a
-                    href="https://github.com/mzwandile-stuurman/new-seaker-site"
-                    class="github" target="_blank"
-                    >Github-Link</a
-                  >
-                  <a target="_blank" href="https://mzwandile-stuurman-seaker-site.netlify.app/" class="live">Live-Link</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class=" collumn python card4-container">
-            <div class="card1-content-container">
-              <div class="card1-img card4">
-                <img src="./Python.png" alt="Card3 Image" />
-                
-              </div>
-              <div class="portfolio-card1-details">
-                <h2 class="card3-heading1">Temperature Converter</h2>
-                <h3 class="card3-heading2">Python</h3>
-                <p class="card4p-details">
-                  Python tkinter, temperature converter. <br> Converts Ceclius to Fahrenheit and vise-versa
-                </p>
-                <div class="card4-btns">
-                  <a
-                    href="https://github.com/mzwandile-stuurman/temperature"
-                    class="github" target="_blank"
-                    >Github-Link</a
-                  >
-                  <a target="_blank" href="https://replit.com/@Mzwandile/tempareture-converter#main.py" class="live">Live-Link</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <div  class="portfolio-container"></div>
+        
     </section>
 
     

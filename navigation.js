@@ -1,11 +1,11 @@
-let i = 0,
+let z = 0,
   myname;
 myname = "Mzwandile Stuurman";
 
 function typing() {
-  if (i < myname.length) {
-    document.getElementById("type-heading").innerHTML += myname.charAt(i);
-    i++;
+  if (z < myname.length) {
+    document.getElementById("type-heading").innerHTML += myname.charAt(z);
+    z++;
     setTimeout(typing, 90);
   }
 }
@@ -13,27 +13,26 @@ typing();
 
 let projects = [
   {
-    imgURL: "../Images/contact-form.PNG",
+    imgURL: "./lotto.png",
     imgALT: "Contact-form-image",
-    title: "Contact-Form",
-    techStack: "HTML/CSS",
-    description:
-      "Contact form created for, <br> any queries/messages that may be directed to me.",
-    githubURL: "https://github.com/mzwandile-stuurman/contact-form",
-    liveProjectURL: "https://mzwandile-stuurman-contact-form.netlify.app/",
+    title: "Lotto number generator",
+    techStack: "Python",
+    description: "Software to generate lotto numbers.",
+    githubURL: "https://github.com/mzwandile-stuurman/python_lotto_machine",
+    liveProjectURL:
+      "https://replit.com/@Mzwandile/Pythonlottogenerator#main.py",
   },
   {
-    imgURL: "../Images/timeline.jpg",
+    imgURL: "./PokeDex.png",
     imgALT: "Card2 Image",
-    title: "Time-Line",
-    techStack: "HTML/CSS",
-    description:
-      "Time-Line of all my edcational qualifications and experiences.",
-    githubURL: "https://github.com/mzwandile-stuurman/timeline",
-    liveProjectURL: "https://mzwandile-stuurman-timeline.netlify.app/",
+    title: "Pokedex",
+    techStack: "JavaScript",
+    description: "Pokedex that gives a list of Pokemons to chose from.",
+    githubURL: "https://github.com/mzwandile-stuurman/pokemon-API",
+    liveProjectURL: "https://mzwandile-pokedex.netlify.app/",
   },
   {
-    imgURL: "../Images/Screenshot from 2021-05-14 09-13-34.png",
+    imgURL: "./Screenshot from 2021-05-14 09-13-34.png",
     imgALT: "Card3 Image",
     title: "Sneaker Site",
     techStack: "HTML/CSS",
@@ -67,60 +66,36 @@ function createCard(card) {
   return createCard;
 }
 
-filterSelection("all"); // Execute the function and show all columns
-function filterSelection(c) {
-  var x, i;
-  x = document.getElementsByClassName("collumn");
-  if (c == "all") c = "";
-  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
-  for (i = 0; i < x.length; i++) {
-    w3RemoveClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+function renderCards() {
+  let projectContainer = document.querySelector(".portfolio-container");
+  for (project of projects) {
+    let card = createCard(project);
+    projectContainer.innerHTML += card;
   }
 }
 
-// Show filtered elements
-function w3AddClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    if (arr1.indexOf(arr2[i]) == -1) {
-      element.className += " " + arr2[i];
-    }
+renderCards();
+
+function filterCards(category) {
+  let cards = document.getElementsByClassName("project-card");
+
+  for (card of cards) {
+    console.log(card);
+    card.style.display = "none";
+  }
+
+  let selectedCards = document.querySelectorAll(`[techStack='${category}']`);
+
+  for (card of selectedCards) {
+    card.style.display = "block";
   }
 }
 
-// Hide elements that are not selected
-function w3RemoveClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1);
-    }
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
   }
-  element.className = arr1.join(" ");
-}
-
-var home = document.querySelector(".home");
-var about = document.querySelector(".about");
-var resume = document.querySelector(".resume");
-var portfolio = document.querySelector(".portfolio");
-var testimonial = document.querySelector(".testimonial");
-var contact = document.querySelector(".contact");
-
-if (home) {
-  document.querySelector(".home").style.color = "green";
-} else if (about) {
-  document.querySelector(".about").style.color = "green";
-} else if (resume) {
-  document.querySelector(".resume").style.color = "green";
-} else if (portfolio) {
-  document.querySelector(".portfolio").style.color = "green";
-} else if (testimonail) {
-  document.querySelector(".testimonial").style.color = "green";
-} else if (contact) {
-  document.querySelector(".contact").style.color = "green";
 }

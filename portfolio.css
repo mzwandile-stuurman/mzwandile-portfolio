@@ -212,3 +212,19 @@
 .filter-menu li.current {
   background: #ff7979;
 }
+
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  width: 23%;
+  margin: 1%;
+}
+
+.project-card img {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+}

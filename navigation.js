@@ -49,15 +49,7 @@ let projects = [
     githubURL: "github.com/mzwandile-stuurman/pokemon-API",
     liveProjectURL: "https://mzwandile-pokedex.netlify.app/",
   },
-  {
-    imgURL: "https://picsum.photos/300?random=23",
-    imgALT: "This is cool",
-    title: "Some Title",
-    techStack: "JavaScript",
-    description: "I made this",
-    githubURL: "#",
-    liveProjectURL: "#",
-  },
+
   {
     imgURL: "./Screenshot from 2021-05-14 09-13-34.png",
     imgALT: "My Project 4",
@@ -68,31 +60,15 @@ let projects = [
     liveProjectURL: "https://mzwandile-stuurman-seaker-site.netlify.app/",
   },
   {
-    imgURL: "https://picsum.photos/300?random=5",
+    imgURL: "./Python.png",
     imgALT: "My Project 5",
-    title: "My Project Title 5",
+    title: "Temparature conveter.",
     techStack: "Python",
-    description: "This is dynamic",
-    githubURL: "#",
-    liveProjectURL: "#",
-  },
-  {
-    imgURL: "https://picsum.photos/300?random=6",
-    imgALT: "My Project 6",
-    title: "My Project Title 6",
-    techStack: "HTML/CSS",
-    description: "I just created this",
-    githubURL: "#",
-    liveProjectURL: "#",
-  },
-  {
-    imgURL: "https://picsum.photos/300?random=7",
-    imgALT: "My Project 7",
-    title: "My Project Title 7",
-    techStack: "JavaScript",
-    description: "Pokedex",
-    githubURL: "#",
-    liveProjectURL: "#",
+    description:
+      "Python tempareture converter that convertes given degrees celius to fahrenheit and fahrenheit to degrees celcius.",
+    githubURL: "https://github.com/mzwandile-stuurman/temperature",
+    liveProjectURL:
+      "https://replit.com/@Mzwandile/tempareture-converter#main.py",
   },
 ];
 
@@ -132,4 +108,8 @@ function filterCards(category) {
   for (card of selectedCards) {
     card.style.display = "block";
   }
+}
+
+function toggleNav() {
+  document.getElementsByClassName("navbar-links")[0].classList.toggle("active");
 }

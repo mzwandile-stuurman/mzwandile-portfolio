@@ -7,6 +7,21 @@
     url("./C8_Apr21_Mzwandile_Stuurman_2_20.png");
   background-size: cover;
 }
+.h-btn {
+  display: none;
+}
+.navbar-links {
+  display: flex;
+  list-style-type: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  justify-content: center;
+  gap: 20px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+  padding: 10px;
+}
 
 .content-container {
   display: flex;
@@ -105,6 +120,7 @@ body {
   gap: 20px;
   float: left;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8));
+  align-items: center;
 }
 
 /* Style the links inside the navigation bar */
@@ -126,9 +142,9 @@ body {
 }
 
 /* Add an active class to highlight the current page */
-.topnav a.active {
+/*.topnav a.active {
   color: white;
-}
+}*/
 
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
@@ -137,50 +153,6 @@ body {
 
 /* @media (max-width: 1043) {
 } */
-
-@media screen and (max-width: 720px) {
-  .Nav-bar {
-    top: 0%;
-    right: 0%;
-    font-size: 11px;
-    position: sticky;
-  }
-  .navbar-link {
-    padding: 0.5%;
-  }
-  .gray-back {
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-  }
-
-  .gray-back img {
-    height: 100vh;
-    width: 100vw;
-    object-fit: cover;
-  }
-
-  .home-heading {
-    position: relative;
-  }
-
-  .home-heading2 {
-    position: relative;
-  }
-
-  .content-container {
-    display: felx;
-    flex-wrap: wrap;
-  }
-  .dark-back {
-    height: 100vh;
-    width: 100vh;
-    object-fit: cover;
-  }
-  .landing-image {
-    object-fit: cover;
-  }
-}
 
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {
@@ -212,5 +184,25 @@ body {
   }
   .topnav {
     position: fixed;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .h-btn {
+    display: block;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 100;
+  }
+  .navbar-links {
+    top: -100%;
+    transition: all 0.5s linear;
+    /*     width: 100; */
+    flex-direction: column;
+  }
+
+  .navbar-links.active {
+    top: 0;
   }
 }

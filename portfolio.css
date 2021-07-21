@@ -216,15 +216,44 @@
 .project-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+
+  padding: 5% 5%;
 }
 
 .project-card {
-  width: 23%;
+  /*width: 23%;
   margin: 1%;
+  background-color: #20c997;
+
+  border-radius: 5px;*/
+
+  border-style: solid;
+  border-radius: 4px;
+  background: rgb(255, 255, 255);
+  margin-bottom: 30px;
+  margin-left: 30px;
+  height: 400px;
+  width: 400px;
+  text-align: center;
 }
 
 .project-card img {
-  height: 300px;
-  width: 100%;
+  max-height: 200px;
+  max-width: 300px;
   object-fit: cover;
+}
+
+.button-container {
+  text-align: center;
+  cursor: pointer;
+}
+
+.button-container a {
+  margin-right: 20px;
+  color: #666;
+}
+
+.button-container a:hover {
+  color: #20c997;
 }

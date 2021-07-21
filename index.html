@@ -43,20 +43,20 @@
     
     
     <!--Landing page-->
-    <section class="body-section" id="home">    
+    <section class="body-section" id="home"> 
+      <nav>
+        <ul class="navbar-links">
+          <li>link</li>
+          <li>link</li>
+          <li>link</li>
+          <li>link</li>
+        </ul>
+        <button class="h-btn" onclick='toggleNav()'>open</button>
+      </nav>   
      <!--Navigation bar-->
       <!--Image and content on landing page-->
-      <div class="topnav" id="myTopnav">
-        <a href="#home" class="active">Home</a>
-        <a href="#about-section">About</a>
-        <a href="#education">Resume</a>
-        <a href="#Portfolio-section">Portfolio</a>
-        <a href="#slider">Testimonials</a>
-        <a href="#contact-me">Contact</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
-      </div>
+      
+     
       <div class="content-container">
         <div class="home-page">
           <h2 class="home-heading"><span id="type-heading" class="type-color"></span></h2>
@@ -264,10 +264,10 @@
         </p>
       </div>
       <div class="button-container">
-        <button onclick="filterCards('All')">All</button>
-        <button onclick="filterCards('HTML/CSS')">HTML/CSS</button>
-        <button onclick="filterCards('Python')">Python</button>
-        <button onclick="filterCards('JavaScript')">JavaScript</button>
+        <a onclick="filterCards('All')">All</a>
+        <a onclick="filterCards('HTML/CSS')">HTML/CSS</a>
+        <a onclick="filterCards('Python')">Python</a>
+        <a onclick="filterCards('JavaScript')">JavaScript</a>
       </div>
       <div class="project-container"></div>
     

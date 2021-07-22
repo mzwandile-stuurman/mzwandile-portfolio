@@ -53,7 +53,6 @@
   border-radius: 0.25rem;
   border: 1px solid #dee2e6;
   background-color: #fff;
-  height: 173px;
 }
 
 .year {
@@ -107,4 +106,21 @@
   margin-right: auto;
   display: block;
   border-bottom: 2px solid #20c997;
+}
+
+.decription1 {
+  color: #343a40;
+  font-size: 13px;
+}
+
+@media screen and (max-width: 600px) {
+  .timeline-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .skills-content-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }

@@ -46,7 +46,8 @@ let projects = [
     title: "PokeDex",
     techStack: "JavaScript",
     description: "a PokeDex to choose any random Pokemon from Poke-API",
-    githubURL: "github.com/mzwandile-stuurman/pokemon-API",
+    githubURL: "https://github.com/mzwandile-stuurman/pokemon-API",
+    
     liveProjectURL: "https://mzwandile-pokedex.netlify.app/",
   },
 

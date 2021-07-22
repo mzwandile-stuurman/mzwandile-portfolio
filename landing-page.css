@@ -33,6 +33,10 @@
   scroll-behavior: smooth;
 }
 
+.navbar-links li a:hover {
+  color: #20c997;
+}
+
 .content-container {
   display: flex;
   justify-content: space-around;

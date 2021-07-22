@@ -23,7 +23,6 @@
       src="https://kit.fontawesome.com/6008c27e6e.js"
       crossorigin="anonymous"
     ></script>
-    
 
     <link
       rel="stylesheet"
@@ -37,6 +36,8 @@
       integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
       crossorigin="anonymous"
     />
+    
+
   </head>
   <body class="section">
     
@@ -44,19 +45,18 @@
     
     <!--Landing page-->
     <section class="body-section" id="home"> 
-      <nav>
+      
+      <nav class="active-nav">
         <ul class="navbar-links">
-          <li>link</li>
-          <li>link</li>
-          <li>link</li>
-          <li>link</li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about section">About</a></li>
+          <li><a href="#education">Resume</a></li>
+          <li><a href="#Portfolio-section">Portfolio</a></li>
+          <li><a href="#slider">Testimonials</a></li>
+          <li><a href="#contact-me">Contact</a></li>
         </ul>
         <button class="h-btn" onclick='toggleNav()'>open</button>
       </nav>   
-     <!--Navigation bar-->
-      <!--Image and content on landing page-->
-      
-     
       <div class="content-container">
         <div class="home-page">
           <h2 class="home-heading"><span id="type-heading" class="type-color"></span></h2>
@@ -270,14 +270,9 @@
         <a onclick="filterCards('JavaScript')">JavaScript</a>
       </div>
       <div class="project-container"></div>
-    
-
-     
         
     </section>
 
-    
-    
     <!--Testimonial Section-->
     <section id="slider">
       <div class="slider-heading-container">
@@ -288,7 +283,7 @@
       </div>
 
       <div class="owl-carousel">
-        <div class="slide"> 
+        <div class="slide filterDiv cars"> 
           <div class="slide-content">
             <img id="image" src="./godwin-dzvapatsra.jpg" alt="First image" />
             <p class="p"> <strong class="strong">Godwin Dvapatsra </strong> <span>Head of Curriculum</span> </p>
@@ -302,7 +297,7 @@
             <i class="fas fa-star text-warning"></i>
           </span>
         </div>
-        <div class="slide"> 
+        <div class="slide filterDiv cars"> 
           <div class="slide-content">
             <img id="image" src="./2021-team-jason-wandrag.jpg" alt="First image" />
             <p class="p"> <strong class="strong">Jason Wandrag </strong> <span>Front-End Lecture</span> </p>
@@ -315,10 +310,9 @@
             <i class="fas fa-star text-warning"></i>
             <i class="fas fa-star text-warning"></i>
           </span>
-
           
         </div>
-        <div class="slide">
+        <div class="slide filterDiv colors">
           <div class="slide-content">
             <img id="image" src="./C8 Apr21 Abdullah Isaacs (4).JPG" alt="First image" />
             <p class="p"> <strong class="strong">Abdullah Isaacs </strong> <span>Colleague</span> </p>
@@ -333,7 +327,7 @@
           </span>
           
         </div>
-        <div class="slide">
+        <div class="slide filterDiv colors">
           <div class="slide-content">
             <img id="image" src="./C8 Apr21 Likho Kapesi (2).JPG" alt="First image" />
             <p class="p"> <strong class="strong">Likho Kapesi </strong> <span>Coleague</span> </p>
@@ -348,7 +342,8 @@
          </span>
           
         </div>
-        <div class="slide">
+        <div class="slide filterDiv colors">
+
           <div class="slide-content">
             <img id="image" src="./C8 Apr21 Gideon Daniels (2).JPG" alt="Gideon Daniels Image" />
             <p class="p"> <strong class="strong">Gideon Daniels </strong> <span>Coleague</span> </p>
@@ -361,7 +356,15 @@
             <i class="fas fa-star text-warning"></i>
             <i class="fas fa-star text-warning"></i>
             </span>
-      </div>
+        </div>
+        <div id="myBtnContainer">
+          <button class="btn-s active" onclick="filterSelection('all')">
+            
+          </button>
+          <button class="btn-s" onclick="filterSelection('cars')">Cars</button>
+          <button class="btn-s" onclick="filterSelection('colors')">Colors</button>
+        </div>
+      
       </div>
       <!-- Script tags under here -->
       <script
@@ -386,6 +389,7 @@
           });
         });
       </script>
+      
     </section>
 
 

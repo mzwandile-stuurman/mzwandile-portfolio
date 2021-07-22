@@ -247,7 +247,10 @@
          
         </div>
       </div>
-      <a class="skills-btn" download="Mzwandile Stuurman WebDeveloper" href="./Mzwandile Stuurman WebDeveloper.pdf"> Download My C.V <i class="fas fa-download"></i></a>
+      <div class="cv-btn">
+        <a class="skills-btn" download="Mzwandile Stuurman WebDeveloper" href="./Mzwandile Stuurman WebDeveloper.pdf"> Download My C.V <i class="fas fa-download"></i></a>
+      </div>
+      
 
       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
       <script>
@@ -373,16 +376,49 @@
       ></script>
       <script>
         $(document).ready(function () {
-          $(".owl-carousel").owlCarousel({
+          $('.owl-carousel').owlCarousel({
+            
             items: 3,
             margin: 50,
             loop: true,
             stagePadding: 50,
-            dots: true,
-            autoplay: true,
+            dots: false,
+            autoplay: false,
+            nav:false,
+            
+
+            responsiveClass:true,
+            responsive:{
+
+              0:{
+                items:1,
+                nav:true,
+                loop:true,
+               
+              },
+              600:{
+                items:2,
+                nav:false,
+                loop:true,
+                autoWidth:true,
+                autoHeight:true,
+                
+              },
+
+              1000:{
+                items:3,
+                nav:false,
+                loop:true,
+                autoplay:false,
+                
+              }
+
+            }
+
           });
         });
       </script>
+     
       
     </section>
 

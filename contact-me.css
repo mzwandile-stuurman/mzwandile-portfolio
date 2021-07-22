@@ -1,7 +1,3 @@
-#contact-me {
-  height: 100%;
-  width: 100%;
-}
 .contact-heading {
   text-align: center;
   margin-bottom: 3rem;
@@ -51,6 +47,7 @@
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  padding: 6%;
 }
 
 .fa-map-marker-alt {
@@ -83,7 +80,7 @@
 .contact-content {
   flex: 0 0 auto;
   align-self: center;
-  margin-left: 90px;
+  padding: 6%;
   width: 25%;
   max-width: 100%;
 }
@@ -189,5 +186,16 @@
   .nav-button {
     top: 3%;
     right: 5%;
+  }
+
+  .contact-section-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 80px;
   }
 }

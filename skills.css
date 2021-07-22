@@ -67,7 +67,10 @@
   border-style: solid;
   border-radius: 50rem;
   margin-top: 3rem;
-  margin-left: 42%;
+}
+
+.cv-btn {
+  text-align: center;
 }
 
 .skills-btn:hover {

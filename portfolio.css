@@ -257,3 +257,17 @@
 .button-container a:hover {
   color: #20c997;
 }
+
+.project-card a {
+  text-decoration: none;
+  color: #666;
+  border: 1px solid #343a40;
+  border-radius: 2px;
+  padding: 5px;
+  margin: 20px;
+}
+
+.project-card a:hover {
+  background-color: #20c997;
+  color: #ddd;
+}

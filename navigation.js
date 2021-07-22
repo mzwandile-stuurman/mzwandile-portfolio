@@ -75,11 +75,11 @@ let projects = [
 function createCard(card) {
   let createdCard = `<div class="project-card" techStack=${card.techStack} >
       <img src="${card.imgURL}" alt="${card.imgALT}">
-      <h4>${card.title}</h4>
-      <h6>${card.techStack}</h6>
-      <p>${card.description}</p>
-      <a href="${card.githubURL}" target="_blank" >Github</a>
-      <a href="${card.liveProjectURL}" target="_blank" >Live</a>
+      <h4 class ="card-title">${card.title}</h4>
+      <h6 class= "card-tech">${card.techStack}</h6>
+      <p class = "card-description">${card.description}</p>
+      <a class="card-git" href="${card.githubURL}" target="_blank" >Github</a>
+      <a class="card-live" href="${card.liveProjectURL}" target="_blank" >Live</a>
     </div>
   `;
   return createdCard;

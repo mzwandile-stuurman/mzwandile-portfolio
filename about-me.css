@@ -122,11 +122,5 @@
   .about-content {
     display: flex;
     flex-wrap: wrap;
-    height: 100vh;
-    width: 100vw;
-  }
-  #about-section {
-    height: 100vh;
-    width: 100vw;
   }
 }

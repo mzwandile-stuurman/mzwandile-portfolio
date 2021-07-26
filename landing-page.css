@@ -9,6 +9,7 @@
 }
 .h-btn {
   display: none;
+  z-index: 999;
 }
 .navbar-links {
   list-style: none;
@@ -100,7 +101,7 @@ body {
 
 .topnav {
   position: fixed;
-  z-index: 999;
+  z-index: 6;
   box-shadow: none;
   width: 100%;
   height: 40px;
@@ -115,6 +116,10 @@ body {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8));
   align-items: center;
   top: 0;
+}
+
+.content3 {
+  text-align: center;
 }
 
 /* Style the links inside the navigation bar */
@@ -178,6 +183,9 @@ body {
   }
   .topnav {
     position: fixed;
+  }
+  .body-section {
+    background-position: center;
   }
 }
 

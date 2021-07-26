@@ -47,7 +47,7 @@ let projects = [
     techStack: "JavaScript",
     description: "a PokeDex to choose any random Pokemon from Poke-API",
     githubURL: "https://github.com/mzwandile-stuurman/pokemon-API",
-    
+
     liveProjectURL: "https://mzwandile-pokedex.netlify.app/",
   },
 
@@ -70,6 +70,25 @@ let projects = [
     githubURL: "https://github.com/mzwandile-stuurman/temperature",
     liveProjectURL:
       "https://replit.com/@Mzwandile/tempareture-converter#main.py",
+  },
+  {
+    imgURL: "./weather.png",
+    imgALT: "My Project 6",
+    title: " Python weather App.",
+    techStack: "Python",
+    description: "Weather checking app using python tkinter GUI.",
+    githubURL: "https://github.com/mzwandile-stuurman/weather_checker",
+    liveProjectURL:
+      "https://replit.com/@Mzwandile/MzwandileWeatherapp#weather_check.py",
+  },
+  {
+    imgURL: "./BMI.png",
+    imgALT: "My Project 7",
+    title: " Body Mass Index calculator",
+    techStack: "Python",
+    description: "An app calculating a person BMI.",
+    githubURL: "https://github.com/mzwandile-stuurman/mzwandile-BMI",
+    liveProjectURL: "https://replit.com/@Mzwandile/BMInottry#BMInottry.py",
   },
 ];
 

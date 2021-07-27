@@ -30,16 +30,7 @@ let projects = [
     githubURL: "https://github.com/mzwandile-stuurman/contact-form",
     liveProjectURL: "https://mzwandile-stuurman-contact-form.netlify.app",
   },
-  {
-    imgURL: "./lotto.png",
-    imgALT: "My Project 2",
-    title: "Lotto numbers generator",
-    techStack: "Python",
-    description: "A simulation of the S.A lotto generator",
-    githubURL: "https://github.com/mzwandile-stuurman/python_lotto_machine",
-    liveProjectURL:
-      "https://replit.com/@Mzwandile/Pythonlottogenerator#main.py",
-  },
+
   {
     imgURL: "./PokeDex.png",
     imgALT: "My Project 3",

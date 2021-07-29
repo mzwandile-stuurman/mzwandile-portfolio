@@ -54,10 +54,10 @@ let projects = [
   {
     imgURL: "./Python.png",
     imgALT: "My Project 5",
-    title: "Temparature conveter.",
+    title: "Temperature conveter.",
     techStack: "Python",
     description:
-      "Python tempareture converter that convertes given degrees celius to fahrenheit and fahrenheit to degrees celcius.",
+      "Python tempereture converter that convertes given degrees celius to fahrenheit and fahrenheit to degrees celcius.",
     githubURL: "https://github.com/mzwandile-stuurman/temperature",
     liveProjectURL:
       "https://replit.com/@Mzwandile/tempareture-converter#main.py",

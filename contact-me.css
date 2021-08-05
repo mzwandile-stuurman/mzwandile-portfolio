@@ -196,7 +196,7 @@
   .contact-content {
     display: flex;
     flex-wrap: wrap;
-    margin-right: 80px;
+    width: 100%;
   }
 
   .form-container {
@@ -236,5 +236,14 @@
   .footer {
     display: flex;
     justify-content: space-around;
+    flex-direction: column;
+  }
+  .contact-button2 {
+    position: absolute;
+    bottom: 0;
+  }
+
+  .form-container {
+    position: relative;
   }
 }

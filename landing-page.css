@@ -2,6 +2,10 @@
   scroll-behavior: smooth;
 }
 
+#type-heading{
+  font-size:larger;
+}
+
 .body-section {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
     url("./C8_Apr21_Mzwandile_Stuurman_2_20.png");

@@ -199,6 +199,8 @@ function type() {
   }
 }
 
+type();
+
 function erase() {
   if (charIndex > 0) {
     if (!cursorSpan.classList.contains("typing"))

@@ -1,15 +1,80 @@
-let z = 0,
-  myname;
-myname = "Mzwandile Stuurman";
-
-function typing() {
-  if (z < myname.length) {
-    document.getElementById("type-heading").innerHTML += myname.charAt(z);
-    z++;
-    setTimeout(typing, 100);
-  }
+const TypeWriter = function(txtElement, words, wait =500){
+  this.txtElement = txtElement;
+  this.words = words;
+  this.txt = '';
+  this.wordIndex = 0;
+  this.wait = parseInt(wait,10);
+  this.type();
+  this.isDeleting = false;
+  
 }
-typing();
+
+// Type Method
+TypeWriter.prototype.type = function(){
+ // current index of word
+ const current = this.wordIndex % this.words.length;
+ // Get full text of current word
+ const fullTxt = this.words[current];
+ 
+ // check if deleting
+ if(this.isDeleting){
+
+
+  //remove char
+
+     
+    this.txt = fullTxt.substring(0, this.txt.length -1);
+
+ }else{
+     // Add char
+
+     this.txt = fullTxt.substring(0, this.txt.length +1);
+
+ }
+
+ // insert txt into element
+ this.txtElement.innerHTML = `<span class="txt">${this.txt}</span>`;
+
+ // initial Type speed
+ let typespeed = 200;
+
+ if(this.isDeleting){
+     typespeed /= 2;
+ }
+
+ // if word is complete
+ if(!this.isDeleting && this.txt === fullTxt){
+     // make pause end
+     typespeed = this.wait;
+     // set delete to true
+     this.isDeleting = true;
+
+ }else if(this.isDeleting && this.txt === ''){
+     this.isDeleting=false;
+     //move to next word
+     this.wordIndex++;
+     // pause before start typing
+     typespeed = 200;
+ }
+
+  setTimeout(() => this.type(), typespeed)
+}
+
+// Init on DOM Load
+
+document.addEventListener('DOMContentLoaded', init);
+
+// Init App
+
+function init(){
+  const txtElement = document.querySelector('.txt-type');
+  const words = JSON.parse(txtElement.getAttribute('data-words'));
+  const wait = txtElement.getAttribute('data-wait');
+  // Init TypeWriter
+  new TypeWriter(txtElement, words, wait);
+
+}
+
 
 function myFunction() {
   var x = document.getElementById("myTopnav");
@@ -20,6 +85,7 @@ function myFunction() {
   }
 }
 
+// Card filtering
 let projects = [
   {
     imgURL: "./contact-form.PNG",
@@ -103,7 +169,6 @@ function renderCards() {
     projectContainer.innerHTML += card;
   }
 }
-
 renderCards();
 
 function filterCards(category) {
@@ -125,99 +190,4 @@ function toggleNav() {
   document.getElementsByClassName("navbar-links")[0].classList.toggle("active");
 }
 
-// Testimonial filter//////////
 
-filterSelection("all");
-function filterSelection(c) {
-  var x, i;
-  x = document.getElementsByClassName("filterDiv");
-  if (c == "all") c = "";
-  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
-  for (i = 0; i < x.length; i++) {
-    w3RemoveClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-  }
-}
-
-// Show filtered elements
-function w3AddClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    if (arr1.indexOf(arr2[i]) == -1) {
-      element.className += " " + arr2[i];
-    }
-  }
-}
-
-// Hide elements that are not selected
-function w3RemoveClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1);
-    }
-  }
-  element.className = arr1.join(" ");
-}
-
-// Add active class to the current control button (highlight it)
-var btnContainer = document.getElementById("myBtnContainer");
-var btns = btnContainer.getElementsByClassName("btn-s");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function () {
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
-}
-
-// typing text
-const typedTextSpan = document.querySelector(".typed-text");
-const cursorSpan = document.querySelector(".cursor");
-
-const textArray = ["Aspiring Full Stack Developer."];
-const typingDelay = 100;
-const erasingDelay = 20;
-const newTextDelay = 900;
-let textArrayIndex = 0;
-let charIndex = 0;
-
-function type() {
-  if (charIndex < textArray[textArrayIndex].length) {
-    if (!cursorSpan.classList.contains("typing"))
-      cursorSpan.classList.add("typing");
-    typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
-    charIndex++;
-    setTimeout(type, typingDelay);
-  } else {
-    cursorSpan.classList.remove("typing");
-    setTimeout(erase, newTextDelay);
-  }
-}
-
-type();
-
-function erase() {
-  if (charIndex > 0) {
-    if (!cursorSpan.classList.contains("typing"))
-      cursorSpan.classList.add("typing");
-    typedTextSpan.textContent = textArray[textArrayIndex].substring(
-      0,
-      charIndex - 1
-    );
-    charIndex--;
-    setTimeout(erase, erasingDelay);
-  } else {
-    cursorSpan.classList.remove("typing");
-    textArrayIndex++;
-    if (textArrayIndex >= textArray.length) textArrayIndex = 0;
-    setTimeout(type, typingDelay + 1100);
-  }
-}
-window.addEventListener("load", function () {
-  if (textArray.length) setTimeout(type, newTextDelay + 250);
-});

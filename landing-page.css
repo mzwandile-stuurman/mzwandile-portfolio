@@ -1,5 +1,6 @@
 *{
   scroll-behavior: smooth;
+  font-family: sans-serif;
 }
 body {
   box-sizing: border-box;
@@ -142,10 +143,6 @@ body {
   font-size: 2rem;
 }
 
-body {
-  font-family: "Poppins", sans-serif;
-}
-
 .home-paragraph {
   color: #fff;
   font-weight: 500;
@@ -175,6 +172,7 @@ body {
 
 .content3 {
   text-align: center;
+  height: 50px;
 }
 
 

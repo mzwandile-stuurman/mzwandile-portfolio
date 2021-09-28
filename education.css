@@ -1,3 +1,7 @@
+#education{
+  background-color: rgb(33, 37, 41);
+}
+
 .education-heading {
   text-align: center;
   margin-bottom: 3rem;
@@ -6,30 +10,34 @@
 }
 
 .education-heading1 {
-  color: #dee3e4;
+  color:  rgb(108, 117, 125);
   opacity: 0.4;
   font-weight: 600;
-  font-size: 4.5rem;
+  font-size: 6rem;
   text-transform: uppercase;
   margin-bottom: 0;
+  margin-top: 0px;
   width: 100%;
 }
 
 .education-paragraph {
-  font-weight: 600;
+ 
   line-height: 1.6;
-  font-size: 2.25rem;
-  color: #343a40;
+  font-size: 3rem;
+  color: #fff;
   margin-bottom: 0;
   width: 100%;
   position: absolute;
   font-family: "Poppins", sans-serif;
-  margin-top: 75px;
+  margin-top: 1%;
 }
 
 .timeline-container {
   display: flex;
-  justify-content: space-around;
+  gap: 10%;
+  padding: 5% 9%;
+
+  
 }
 
 .education-new-container {
@@ -42,21 +50,27 @@
 }
 .course {
   font-size: 21;
-  color: #252b33;
+  color: #fff;
   font-weight: 500;
   margin-top: -2px;
 }
 
 .education-border {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   padding: 1.5rem;
   margin-bottom: 1.5rem;
   border-radius: 0.25rem;
-  border: 1px solid #dee2e6;
-  background-color: #fff;
+  border: 1px solid #111418;
+  background-color: #111418;
+  height: 200px;
+  width:100%;
+
 }
 
 .year {
-  background-color: #20c997;
+  background-color: #dc3545;
   font-weight: 400;
   font-size: 14px;
   color: #fff;
@@ -65,14 +79,15 @@
 
   border-radius: 4px;
   text-align: center;
+  width:142px;
 }
 
 .school {
-  color: #dc3545;
+  color: #20c997;
 }
 
 .year1 {
-  background-color: #20c997;
+  background-color: #dc3545;
   font-weight: 400;
   font-size: 14px;
   color: #fff;
@@ -81,21 +96,23 @@
 
   border-radius: 4px;
   text-align: center;
+  width:142px;
 }
 
 .course1 {
   font-size: 21;
-  color: #252b33;
+  color: #fff;
   font-weight: 500;
   margin-top: -2px;
 }
 
 .school1 {
-  color: #dc3545;
+  color: #20c997;
 }
 
 .education-heading-new h2 {
   text-align: center;
+  color: #fff;
 }
 
 .edu-line {
@@ -109,8 +126,21 @@
 }
 
 .decription1 {
-  color: #343a40;
-  font-size: 13px;
+  color: rgba(255,255,255,.5);
+  
+}
+
+.decription{
+  color: rgba(255,255,255,.5);
+}
+
+.skills-content1 h2{
+  color: #fff;
+
+}
+
+.skills-content2 h2{
+  color: #fff;
 }
 
 @media screen and (max-width: 600px) {

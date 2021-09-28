@@ -42,6 +42,7 @@
   margin-bottom: 40px;
   padding: 10px;
   font-size: 1.75rem;
+  color: rgba(255,255,255,.5);
 }
 
 .junior {
@@ -57,8 +58,8 @@
 
 .skills-btn {
   text-decoration: none;
-  color: #343a40;
-  border-color: #343a40;
+  color: rgba(255,255,255,.5);
+  color: rgba(255,255,255,.5);
   padding: 0.8rem 2.6rem;
   font-weight: 500;
   border-width: 2px;
@@ -67,10 +68,12 @@
   border-style: solid;
   border-radius: 50rem;
   margin-top: 3rem;
+
 }
 
 .cv-btn {
   text-align: center;
+  height: 50px;
 }
 
 .skills-btn:hover {

@@ -1,8 +1,11 @@
 
-
+#slider{
+  background-color: rgb(33, 37, 41);
+  height: 100vh;
+}
 .slider-heading-container {
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
   position: relative;
   display: flex;
 }
@@ -21,7 +24,7 @@
   font-weight: 600;
   line-height: 1.6;
   font-size: 2.25rem;
-  color: #343a40;
+  color: #fff;
   margin-bottom: 0;
   width: 100%;
   position: absolute;
@@ -32,7 +35,8 @@
 .slide {
   padding: 20px;
   border-radius: 0.25rem;
-  background-color: #f8f9fa;
+  background-color: rgb(17, 20, 24);
+  
   
 }
 
@@ -42,7 +46,7 @@
   margin-bottom: 1.5rem;
   align-items: center;
   padding: 10px;
-  color: #343a40;
+  
 }
 
 #image {
@@ -56,13 +60,15 @@
 
 .strong {
   font-weight: 600;
-  color: #343a40;
+  
   display: block;
+  color: rgb(255, 255, 255);
 }
 
 .p {
   font-weight: 500 !important;
-  color: #343a40;
+  color: rgba(255,255,255,.5);
+ 
 }
 
 .owl-carousel {
@@ -79,7 +85,7 @@
 }
 
 .p2 {
-  color: #343a40;
+  color: rgb(255, 255, 255);
 }
 
 /*.filterDiv {

@@ -1,6 +1,8 @@
 #contact-me{
   background-color: #343a40;
 }
+
+
 .contact-heading {
   text-align: center;
   margin-bottom: 3rem;
@@ -69,7 +71,7 @@
   font-size: 1.3125rem;
   text-transform: uppercase;
 
-  color: #343a40;
+  color: #fff;
   font-weight: 500;
 }
 .contact-form {
@@ -90,6 +92,7 @@
 
 .address {
   margin-bottom: 50px;
+  color:#fff;
 }
 
 .form-group-name {
@@ -113,10 +116,11 @@
 .form-input {
   width: 100%;
   height: 45px;
-  border-color: #dae1e3;
+  border-color: #232a31;;
   font-size: 13px;
-  color: black;
-  border: 1px solid #ced4da;
+  color: #232a31;
+  background-color: #232a31;
+  border: 1px solid #232a31;
 }
 .form-input:focus {
   border-color: #20c997;
@@ -162,15 +166,18 @@
   display: flex;
   justify-content: space-evenly;
   width: 100%;
+  background-color: #232a31;
+  
 }
 
 .footer-p {
   text-transform: uppercase;
-  color: #343a40;
+  color:rgb(255, 255, 255);
 }
 
 .footer-p-2 {
-  color: #343a40;
+  color: rgb(255, 255, 255);
+  margin-right: 10px;
 }
 
 .fa-star {
@@ -181,7 +188,7 @@
 .form-container h2 {
   font-size: 1.3125rem;
   text-transform: uppercase;
-  color: #343a40;
+  color: #fff;
   font-weight: 500;
 }
 
